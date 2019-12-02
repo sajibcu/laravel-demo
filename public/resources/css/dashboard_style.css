@@ -1,0 +1,171 @@
+.student_dashboard .resp-vtabs li.resp-tab-active {
+    border-left: solid 3px #333;
+} 
+
+.student_dashboard .resp-tab-content{
+    padding: 0px 15px;
+}
+
+
+.student_dashboard .btn{
+    background:#68d7ac;
+    color:#ffffff;
+    border: unset;
+}
+
+.serviceBox .service-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    font-size: 40px;
+    border: 1px solid #727cb6;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+    color:  #727cb6;
+}
+/*Notification*/
+
+.student_notification-wrapper{padding-top: 40px; padding-bottom:40px; background-color: #fafbfa;}
+.student_notification{    background-color: #fff;
+    border:1px solid #eaefe9;     
+    font-size: 14px;
+}
+.panel{margin-bottom: 0px;}
+.student_notification-step {     
+    border-top: 1px solid #f2f2f2;
+    color: #666;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.student_notification-step-number {
+    border-radius: 50%;
+    border: 1px solid 
+    #F99C23;
+    display: inline-block;
+    font-size: 11px;
+    height: 25px;
+    margin-right: 15px;
+    padding: 3px;
+    text-align: center;
+    width: 25px;
+}
+
+.student_notification-step-number i{
+    color: #ea8a15;
+}
+.student_notification-step-title{ 
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: middle;
+    display: inline-block; 
+    margin: 0px;
+}
+.student_notification-step-title a{
+    color: #54AE4C;
+}
+ 
+
+.checout-address-step .form-group{margin-bottom: 18px;display: inline-block;
+    width: 100%;}
+
+
+.student_notification-step-body {
+    padding-left: 10px;
+    margin-top: 20px;
+    border-left: 2px solid #F99C23;
+    margin-left: 46px;
+}
+
+.student_notification-step-active{display: block;}
+.student_notification-step-disabled{display: none;}
+
+.student_notification-login{}
+.login-phone{display: inline-block;}
+.login-phone:after {
+    content: '+91 - ';
+    font-size: 14px;
+    left: 36px;
+}
+.login-phone:before {
+    content: "";
+    font-style: normal;
+    color: #333;
+    font-size: 18px;
+    left: 12px;
+        display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.login-phone:after, .login-phone:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.login-phone .form-control {
+    padding-left: 68px;
+    font-size: 14px;
+    
+}
+.student_notification-login .btn{height: 42px;     line-height: 1.8;}
+ 
+.otp-verifaction{margin-top: 30px;}
+.student_notification-sidebar{background-color: #fff;
+    border:1px solid #eaefe9; padding: 30px; margin-bottom: 30px;}
+.student_notification-sidebar-merchant-box{background-color: #fff;
+    border:1px solid #eaefe9; margin-bottom: 30px;}
+.student_notification-total{border-bottom: 1px solid #eaefe9; padding-bottom: 10px;margin-bottom: 10px; }
+.student_notification-invoice{display: inline-block;
+    width: 100%;}
+.checout-invoice-title{    float: left; color: #30322f;}
+.checout-invoice-price{    float: right; color: #30322f;}
+.student_notification-charges{display: inline-block;
+    width: 100%;}
+.checout-charges-title{float: left; }
+.checout-charges-price{float: right;}
+.charges-free{color: #43b02a; font-weight: 600;}
+.student_notification-payable{display: inline-block;
+    width: 100%; color: #333;}
+.student_notification-payable-title{float: left; }
+.student_notification-payable-price{float: right;}
+
+.student_notification-cart-merchant-box{ padding: 20px;display: inline-block;width: 100%; border-bottom: 1px solid #eaefe9;
+ padding-bottom: 20px; }
+.student_notification-cart-merchant-name{color: #30322f; float: left;}
+.student_notification-cart-merchant-item{ float: right; color: #30322f; }
+.student_notification-cart-products{}
+
+.student_notification-cart-products .student_notification-charges{ padding: 10px 20px;
+    color: #333;}
+.student_notification-cart-item{ border-bottom: 1px solid #eaefe9;
+    box-sizing: border-box;
+    display: table;
+    font-size: 12px;
+    padding: 22px 20px;
+    width: 100%;}
+ .student_notification-item-list{}
+.student_notification-item-count{ float: left; }
+.student_notification-item-img{width: 60px; float: left;}
+.student_notification-item-name-box{ float: left; }
+.student_notification-item-title{ color: #30322f; font-size: 14px;  }
+.student_notification-item-unit{  }
+.student_notification-item-price{float: right;color: #30322f; font-size: 14px; font-weight: 600;}
+
+
+.student_notification-viewmore-btn{padding: 10px; text-align: center;}
+
+.header-student_notification-item{text-align: right; padding-top: 20px;}
+.student_notification-promise-item {
+    background-repeat: no-repeat;
+    background-size: 14px;
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 24px;
+    color: #30322f;
+}
+.student_notification-promise-item i{padding-right: 10px;color: #43b02a;}

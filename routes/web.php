@@ -13,3 +13,4 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/products', 'PagesController@product');
