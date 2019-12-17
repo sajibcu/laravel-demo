@@ -64,10 +64,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect waves-light"href="{{ url('/product') }}">Add Product</a>
+            <a class="nav-link waves-effect waves-light" href="learning.html">Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="{{ url('/products') }}">Products</a>
+            <a class="nav-link waves-effect waves-light" href="analytics.html">Analytics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect waves-light" href="math.html">Math</a>
@@ -102,21 +102,22 @@
       <h1 class="course_title">Products</h1>
     </div>
     <div class="row">
-      <form action="{{ url('/product/store')}}" method="post">
-        {{ csrf_field()}}
-        <div class="form-group">
-          <label for="email">Product Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+
+      @foreach($products as $product)
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox purple-color">
+          <div class="service-icon">
+            P
+          </div>
+          <div class="service-content">
+            <h3><a href="">{{ $product->name }}</a></h3>
+            <p>
+              Counting objects, inside and outside, longer and shorter, letter names, rhyming words, and more.
+            </p>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="pwd">Description:</label>
-          <input type="text" class="form-control" id="description" placeholder="Enter description" name="description">
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </div>
+      @endforeach
     </div>
   </div>
   <!--Classes-->

@@ -59,12 +59,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent-5">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link waves-effect waves-light" href="index.html"><i class="fa fa-home"></i>
+            <a class="nav-link waves-effect waves-light" href="{{ url('/') }}"><i class="fa fa-home"></i>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect waves-light" href="learning.html">Classes</a>
+            <a class="nav-link waves-effect waves-light" href="{{ url('/product') }}">Add Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect waves-light" href="analytics.html">Analytics</a>
