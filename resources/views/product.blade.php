@@ -102,7 +102,18 @@
       <h1 class="course_title">Products</h1>
     </div>
     <div class="row">
-      <form action="{{ url('/product/store')}}" method="post">
+      @if ($errors->any())
+          <div class="alert alert-danger">
+              <ul>
+                  @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                  @endforeach
+              </ul>
+          </div>
+      @endif
+    </div>
+    <div class="row">
+      <form action="{{ url('/product/store')}}" method="post" enctype="multipart/form-data">
         {{ csrf_field()}}
         <div class="form-group">
           <label for="email">Product Name:</label>
@@ -112,6 +123,12 @@
           <label for="pwd">Description:</label>
           <input type="text" class="form-control" id="description" placeholder="Enter description" name="description">
         </div>
+
+        <div class="form-group">
+          <label for="pwd">File:</label>
+          <input type="file" class="form-control" id="file"  name="file">
+        </div>
+
         <div class="checkbox">
           <label><input type="checkbox" name="remember"> Remember me</label>
         </div>

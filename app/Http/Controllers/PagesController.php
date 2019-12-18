@@ -35,6 +35,7 @@ class PagesController extends Controller
             'name' => 'required|max:255',
             'description' => 'required',
         ]);
+        $file = $request->file('file');
         $product = new Product();
         $product->name = $request->name;
         $product->description = $request->description;
@@ -43,8 +44,12 @@ class PagesController extends Controller
         $product->price = 0;
         $product->quantity = 1;
         $product->status = 1;
-        $product->slug = 'dfsd';
+        $product->slug =$file->getClientOriginalName();
         $product->save();
+
+        $destinationPath = 'uploads';
+        $file->move($destinationPath,$file->getClientOriginalName());
+
         return view('product');
     }
 }
